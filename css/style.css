@@ -1,0 +1,311 @@
+
+@font-face {
+  font-family: Museo700-Regular;
+  src: url('css/fonts/Museo700-Regular.ttf');
+}
+@font-face {
+  font-family: Gentium Book Basic;
+  src: url('css/fonts/gentium-book-basic.ttf');
+}
+@font-face {
+  font-family: gentium-book-basic-italic;
+  src: url('css/fonts/gentium-book-basic-italic.ttf');
+}
+@font-face {
+  font-family: Open Sans;
+  src: url('css/fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: GenBasBI;
+  src: url('css/fonts/GenBasBI.ttf');
+}
+@font-face {
+  font-family: OpenSans-Semibold;
+  src: url('css/fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: Myriad Pro Regular;
+  src: url('css/fonts/Myriad Pro Regular.ttf');
+}
+html {
+  min-width: 1440px;
+}
+body {
+  width: auto;
+  height: auto;
+}
+.all_block {
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  }
+.header {
+  background: url("images/main_bg.jpg");
+  width: 1440px;
+  height: 770px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0 auto;
+}
+.header_title {
+  padding-left: 365px;
+}
+.header_title h1 {
+  font-size: 60px;
+  font-family: "Museo700-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 0.4;
+  text-align: left;
+  font-weight: normal;
+  padding-top: 568px;
+  margin: 0 auto;
+}
+.header_title p {
+  margin-top: 28px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "gentium-book-basic-italic";
+  color: rgb(215, 215, 215);
+  line-height: 0.8;
+  text-align: left;
+}
+.header_title hr {
+  background-color: rgb(215, 215, 215);
+  width: 701px;
+}
+.header_by h5 {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: #d7d7d7;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 0;
+}
+.header_by p {
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.667;
+  text-align: left;
+  margin: 0 auto;
+  float: left;
+}
+.header_by span {
+  float: right;
+  margin-right: 375px;
+  font-size: 13px;
+}
+.header_by i {
+  margin-left: 17px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.made_by {
+  background-image: url("images/made_by.jpg");
+  border-radius: 50%;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background-repeat: no-repeat;
+  border: none;
+  margin-left: 5px;
+}
+.main_block {
+  background-color: #fff;
+  display: inline-block;
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+.title_line  {
+  margin-top: 20px;
+  margin-left: 305px;
+  font-size: 10px;
+  font-family: "Open Sans";
+  color: rgba(191, 191, 191, 0.502);
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2.4;
+  text-align: left;
+}
+.main_block ul {
+  margin: 0 auto;
+}
+.line_1 {
+  list-style-type: none;
+  float: left;
+  font-size: 22px;
+  font-family: "GenBasBI";
+  color: rgba(191, 191, 191, 0.49);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.091;
+  text-align: center;
+  margin-left: 307px;
+  width: 30px;
+  line-height: 1.818;
+}
+.main_content_1, .main_content_5, .main_content_10, .main_content_15 {
+  width: 705px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 22px;
+  font-family: "Gentium Book Basic";
+  color: rgb(25, 25, 25);
+  line-height: 1.818;
+  text-align: left;
+}
+.main_content_5 span {
+  display: block;
+  margin: 35px 0 35px;
+  color: #626262;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+.main_content_20, .main_content_25, .main_content_30 {
+  padding-left: 50px;
+  width: 680px;
+  height: auto;
+  margin: auto;
+  font-size: 22px;
+  font-family: "Gentium Book Basic";
+  color: rgb(25, 25, 25);
+  line-height: 1.818;
+  text-align: left;
+}
+.main_content_15 span {
+  font-family: "Myriad Pro Regular";
+  margin-left: 38px;
+  color: #949494;
+}
+.main_content_20 span, .main_content_25 span {
+  padding-bottom: 48px;
+  font-family: "Myriad Pro Regular";
+  color: #949494;
+}
+.back_to_top {
+  padding-top: 60px;
+  letter-spacing: 2px;
+  margin: auto;
+  margin-top: 225px;
+  font-size: 18px;
+  min-width: 120px;
+  height: 50px;
+  font-family: "Open Sans";
+  color: #a8a8a8;
+  font-weight: bold;
+  line-height: 0.2;
+  text-align: center;
+}
+.back_to_top p {
+  background: url("images/Back_to_top_arrow.png");
+  background-position: top center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 0 auto;
+  line-height: 1.667;
+}
+.back_to_top:hover {
+  cursor: pointer;
+}
+.footer_share {
+  position: relative;
+  background: url("images/footer_bg.png");
+  width: 1439px;
+  height: 420px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin-top: -210px;
+}
+.footer_share a {
+  text-decoration: none;
+}
+.footer_share h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "OpenSans-Semibold";
+  color: rgb(46, 204, 113);
+  line-height: 2;
+  position: absolute;
+  margin: 120px 598px 175px 598px;
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  border: 2px solid #2ecc71;
+  border-radius: 50px;
+}
+.footer_share h5:hover {
+  transition: 1s linear;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.footer_left {
+  background: url("images/footer_left_dark.jpg");
+  width: 720px;
+  height: 360px;
+  margin-top: -31px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.footer_left:hover {
+  background: url("images/footer_left.jpg");
+  transition: all 1s linear;
+}
+.footer_right {
+  background: url("images/footer_right_dark.jpg");
+  width: 719px;
+  height: 360px;
+  margin-top: -360px;
+  margin-left: 720px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.footer_right:hover {
+  background: url("images/footer_right.jpg");
+  transition: all 1s linear;
+}
+.footer_left h4, .footer_right h4  {
+  width: 360px;
+  position: absolute;
+  margin-left: 65px;
+  margin-top: 70px;
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.8;
+  text-align: left;
+}
+.footer_left h3,.footer_right h3 {
+  width: 360px;
+  font-size: 35px;
+  font-family: "Gentium Book Basic";
+  color: rgb(255, 255, 255);
+  line-height: 1.143;
+  text-align: left;
+  position: absolute;
+  font-weight: normal;
+  margin-top: 135px;
+  margin-left: 65px;
+}
+.footer_left h5, .footer_right h5 {
+  width: 360px;
+  position: absolute;
+  font-size: 30px;
+  font-family: "gentium-book-basic-italic";
+  color: rgb(215, 215, 215);
+  line-height: 0.8;
+  text-align: left;
+  margin-top: 185px;
+  margin-left: 65px;
+ }
