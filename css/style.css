@@ -1,31 +1,26 @@
-
 @font-face {
-  font-family: Museo700-Regular;
-  src: url('css/fonts/Museo700-Regular.ttf');
-}
-@font-face {
-  font-family: Gentium Book Basic;
-  src: url('css/fonts/gentium-book-basic.ttf');
+  font-family: Gentium-Book-Basic;
+  src: url('../fonts/gentium-book-basic.ttf');
 }
 @font-face {
   font-family: gentium-book-basic-italic;
-  src: url('css/fonts/gentium-book-basic-italic.ttf');
+  src: url('../fonts/gentium-book-basic-italic.ttf');
 }
 @font-face {
   font-family: Open Sans;
-  src: url('css/fonts/OpenSans-Bold.ttf');
+  src: url('../fonts/OpenSans-Bold.ttf');
 }
 @font-face {
   font-family: GenBasBI;
-  src: url('css/fonts/GenBasBI.ttf');
+  src: url('../fonts/GenBasBI.ttf');
 }
 @font-face {
   font-family: OpenSans-Semibold;
-  src: url('css/fonts/OpenSans-Semibold.ttf');
+  src: url('../fonts/OpenSans-Semibold.ttf');
 }
 @font-face {
   font-family: Myriad Pro Regular;
-  src: url('css/fonts/Myriad Pro Regular.ttf');
+  src: url('../fonts/Myriad-Pro-Regular.ttf');
 }
 body {
   min-width: 1440px;
@@ -33,7 +28,7 @@ body {
 .header {
   display: flex;
   align-items: flex-end;
-  background: url("images/main_bg.jpg");
+  background: url("../images/main_bg.jpg");
   width: 1440px;
   height: 700px;
   background-repeat: no-repeat;
@@ -45,7 +40,7 @@ body {
 }
 .header_title h1 {
   font-size: 60px;
-  font-family: "Museo700-Regular";
+  font-family: "Gentium-Book-Basic";
   color: rgb(255, 255, 255);
   line-height: 0.4;
   text-align: left;
@@ -94,9 +89,13 @@ body {
   margin-left: 17px;
   text-decoration: none;
   color: #ffffff;
+  transition: .1s ease-in-out;
+}
+.header_by a:hover {
+  transform: scale(1.15);
 }
 .made_by {
-  background-image: url("images/made_by.jpg");
+  background-image: url("../images/made_by.jpg");
   border-radius: 50%;
   background-position: center;
   width: 28px;
@@ -146,7 +145,7 @@ body {
   height: auto;
   margin: 0 auto;
   font-size: 22px;
-  font-family: "Gentium Book Basic";
+  font-family: "Gentium-Book-Basic";
   color: rgb(25, 25, 25);
   line-height: 1.818;
   text-align: justify;
@@ -165,7 +164,7 @@ body {
   height: auto;
   margin: auto;
   font-size: 22px;
-  font-family: "Gentium Book Basic";
+  font-family: "Gentium-Book-Basic";
   color: rgb(25, 25, 25);
   line-height: 1.818;
 }
@@ -180,10 +179,9 @@ body {
   color: #949494;
 }
 .back_to_top {
-  padding-top: 60px;
   letter-spacing: 2px;
   margin: auto;
-  margin-top: 225px;
+  margin: 60px 0 10px;
   font-size: 18px;
   min-width: 120px;
   height: 50px;
@@ -194,7 +192,7 @@ body {
   text-align: center;
 }
 .back_to_top p {
-  background: url("images/Back_to_top_arrow.png");
+  background: url("../images/Back_to_top_arrow.png");
   background-position: top center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -209,60 +207,58 @@ body {
   cursor: pointer;
 }
 .footer_share {
-  position: relative;
-  background: url("images/footer_bg.png");
-  width: 1439px;
-  height: 420px;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  margin-top: -210px;
+  background: url("../images/footer_bg.png") no-repeat;
+  width: 1440px;
+  height: 225px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer_share a {
+  display: block;
   text-decoration: none;
-}
-.footer_share h5 {
   text-transform: uppercase;
   font-size: 12px;
   font-family: "OpenSans-Semibold";
   color: rgb(46, 204, 113);
   line-height: 2;
   position: absolute;
-  margin: 120px 598px 175px 598px;
   text-align: center;
   padding: 20px;
   width: 200px;
   border: 2px solid #2ecc71;
   border-radius: 50px;
-}
-.footer_share h5:hover {
   transition: 1s linear;
+}
+.footer_share a:hover {
   color: #fff;
   border: 2px solid #fff;
 }
-.footer_left {
-  background: url("images/footer_left_dark.jpg");
+
+.footer_lr {
+  display: flex;
+}
+.footer_left,
+.footer_right {
   width: 720px;
   height: 360px;
-  margin-top: -31px;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  transition: 1s linear;
+  box-shadow: inset 0 50px 50px -45px black;
+}
+.footer_left {
+  background: url("../images/footer_left_dark.jpg");
 }
 .footer_left:hover {
-  background: url("images/footer_left.jpg");
-  transition: all 1s linear;
+  background: url("../images/footer_left.jpg");
 }
 .footer_right {
-  background: url("images/footer_right_dark.jpg");
-  width: 719px;
-  height: 360px;
-  margin-top: -360px;
-  margin-left: 720px;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background: url("../images/footer_right_dark.jpg");
 }
 .footer_right:hover {
-  background: url("images/footer_right.jpg");
-  transition: all 1s linear;
+  background: url("../images/footer_right.jpg");
 }
 .footer_left h4, .footer_right h4  {
   width: 360px;
@@ -277,10 +273,11 @@ body {
   line-height: 2.8;
   text-align: left;
 }
-.footer_left h3,.footer_right h3 {
+.footer_left h3,
+.footer_right h3 {
   width: 360px;
   font-size: 35px;
-  font-family: "Gentium Book Basic";
+  font-family: "Gentium-Book-Basic";
   color: rgb(255, 255, 255);
   line-height: 1.143;
   text-align: left;
@@ -289,7 +286,8 @@ body {
   margin-top: 135px;
   margin-left: 65px;
 }
-.footer_left h5, .footer_right h5 {
+.footer_left h5,
+.footer_right h5 {
   width: 360px;
   position: absolute;
   font-size: 30px;
